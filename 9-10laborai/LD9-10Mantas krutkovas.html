@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<section class="header" id="HOME">
+    <nav>
+        <a href="LD910.html"><img src="/unnamed (12).jpg" id = "mantelis"></a>
+    
+        
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#HOME">
+                    <b>Home</b>
+                </a>
+            </li>
+                <li><a href="#aboutme">
+                    <b>Resume</b>
+                </a>
+                </li>
+                <li><a href="#CONTACT">
+                    <b>Contact</b>
+                </a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>I am Mantas Krutikovas</h1>
+        <p>Photographer</p>
+    </div>
+</section>
+
+
+<!-- About Me Section -->
+<section class="aboutme" id="aboutme">
+    <h1>Resume</h1>
+    <div class="row">
+        <div class="course-col">
+            <h3>SKILLS</h3>
+            <div class="skills">
+                <img src="/Skills.PNG" style="max-width: 100%;" alt="Skills">
+            </div>
+        </div>
+        
+        <div class="course-col">
+            <h3>Info</h3>
+            <p>Name: Morgan Freeman</p>
+            <p>Profile: full stack developer</p>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (617) 557-0089</p>
+        </div>
+
+        <div class="course-col">
+            <h3>About me</h3>
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+            <p>Nulla porttitor accumsan tincidunt.</p>
+        </div>
+    </div>
+</section>
+
+<section class="kontaktai" id="CONTACT">
+    <div class="container">
+        <form class="comment-form">
+            <h1>Send Message US</h1>
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name">
+
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email">
+
+            <label for="subject">Subject:</label>
+            <input id="subject" type="text" name="subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" cols="50"></textarea>
+
+            <button id="send" name="send">Send message</button>
+        </form>
+        <div class="getintouch">
+            <h1>Get in Touch</h1>
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+            <p>Nulla porttitor accumsan tincidunt.</p>
+        </div>
+    </div>
+</section>
+
+
+   
+
+
+
+
+
+
+<section>
+    <div class="linkai">
+        <a href="https://www.facebook.com/?locale=lt_LT">
+            <img src="/fb.png"  style="max-width: 100%;" alt="fblinkas">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="/insta.avif" style="max-width: 100%;" alt="instalinkas">
+        </a>
+        <a href="https://twitter.com">
+            <img src="/81609.png" style="max-width: 100%;" alt="xlinkas">
+        </a>
+        <a href="https://www.skype.com/en/">
+            <img src="/skype.png" style="max-width: 100%;" alt="skypelinkas">
+        </a>
+    </div>
+
+</section>
+
+
+
+
+
+<!-----Javascirpt for toggle menu-->
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+</script>
+    </body>
+</html>
